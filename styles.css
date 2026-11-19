@@ -1,3 +1,4 @@
+@font-face{font-family:"Sage";src:url("assets/fonts/Sage.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
 /* =========================================================
    Lounah Café — homepage
    Palette evolves the current site: off-white, ink, plum,
@@ -10,7 +11,7 @@
   --radius-sm:12px; --radius:20px; --radius-lg:32px;
   --ease:cubic-bezier(.2,.7,.2,1);
   --pad:clamp(20px,5vw,80px);
-  --serif:"ivymode","Fraunces",Georgia,serif;   /* TODO: ivymode arrives with the Adobe kit */
+  --serif:"Sage",Georgia,serif;   /* headings: Sage (self-hosted from assets/fonts) */
   --sans:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
   --head-h:88px;
 }
