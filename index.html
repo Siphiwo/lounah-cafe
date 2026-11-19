@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lounah Café · Daytime café in Paarl &amp; Franschhoek</title>
+<meta name="description" content="Seasonal food and great coffee in a heritage Paarl home and garden, and at Allée Bleue Wine Estate. Walk-ins welcome.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lounah Café · Daytime café in Paarl &amp; Franschhoek">
+<meta property="og:description" content="Seasonal food and great coffee in a heritage Paarl home and garden, and at Allée Bleue Wine Estate. Walk-ins welcome.">
+<meta property="og:url" content="https://www.lounah.co.za/">
+<meta property="og:image" content="assets/ig/De0pjtZjc_2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- TODO: add the Adobe Fonts kit for "ivymode" (the current site's heading face) and delete the Fraunces fallback below.
+     <link rel="stylesheet" href="https://use.typekit.net/[ADOBE_KIT_ID].css"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+<link rel="preload" as="image" href="assets/ig/De0pjtZjc_2.jpg" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="drop" id="drop" aria-hidden="true">
+  <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <defs><mask id="beanCut"><rect width="120" height="160" fill="#fff"/>
+      <path d="M60 14C38 52 80 70 58 100S72 134 60 148" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/></mask></defs>
+    <ellipse cx="60" cy="80" rx="48" ry="68" mask="url(#beanCut)"/>
+  </svg>
+</div>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- 1. ANNOUNCEMENT BAR -->
+<div class="announce" id="announce" hidden>
+  <div class="announce__inner">
+    <p class="announce__ticker" id="announceTicker" aria-live="polite"></p>
+    <button class="announce__close" id="announceClose" type="button" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+<!-- 2. HEADER -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="wordmark" href="#top" aria-label="Lounah Café, home">Lounah Café</a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="#whatson">What's on</a>
+      <a href="#story">Story</a>
+    </nav>
+
+    <div class="header__right">
+      <p class="status" id="headerStatus" aria-live="polite"><span class="dot"></span><span class="status__text">Checking hours…</span></p>
+      <div class="picker">
+        <button class="btn btn--plum" id="planBtn" type="button" aria-expanded="false" aria-controls="planPop">Plan your visit</button>
+        <div class="pop" id="planPop" hidden role="dialog" aria-label="Choose a branch"></div>
+      </div>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" hidden>
+  <nav class="sheet__nav" aria-label="Mobile">
+    <a href="#menu" style="--i:0">Menu</a>
+    <a href="#visit" style="--i:1">Visit</a>
+    <a href="#whatson" style="--i:2">What's on</a>
+    <a href="#story" style="--i:3">Story</a>
+    <a href="#reviews" style="--i:4">Reviews</a>
+  </nav>
+  <p class="sheet__meta" style="--i:5">501 Main Rd, Paarl · Allée Bleue, Franschhoek</p>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- 3. HERO -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="assets/ig/De0pjtZjc_2.jpg" width="1364" height="1706"
+         alt="Guests under white umbrellas and old trees on the terrace at Lounah Café, Allée Bleue" fetchpriority="high">
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+
+  <div class="hero__body">
+    <a class="badge" id="badge" href="#reviews">
+      <span class="badge__stars" id="badgeStars" aria-hidden="true"></span>
+      <span class="badge__score"><b id="badgeScore">0.0</b> <span id="badgeCount">Google reviews</span></span>
+    </a>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="line__in">Take your</span></span>
+      <span class="line"><span class="line__in"><em>time.</em></span></span>
+    </h1>
+    <p class="hero__sub">Seasonal food and good coffee in a heritage Paarl home and garden. Come settle in.</p>
+    <div class="hero__cta">
+      <button class="btn btn--plum btn--lg" id="planBtn2" type="button" aria-expanded="false" aria-controls="planPop2">Plan your visit</button>
+      <a class="btn btn--ghost btn--lg" href="#menu">See the menu</a>
+      <div class="pop pop--up" id="planPop2" hidden role="dialog" aria-label="Choose a branch"></div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></div>
+</section>
+
+<!-- 5. STORY -->
+<section class="story section" id="story">
+  <div class="story__media reveal">
+    <img src="assets/ig/DflkrCYmvAj.jpg" width="1364" height="1706" loading="lazy"
+         alt="A quiet corner inside Lounah Café: wooden floor, framed painting and a table set by the window" id="storyImg">
+  </div>
+  <div class="story__body">
+    <p class="eyebrow reveal" style="--i:0">Our story</p>
+    <h2 class="reveal" style="--i:1">A home before it was a <em>café</em></h2>
+    <p class="lede reveal" style="--i:2">Lounah Café lives in one of Paarl's oldest family homes: wooden floors, a stoep made for long breakfasts, and a garden with trees and swings out back. Four years in, we still cook with what's in season and pour coffee for people who'd rather not rush.</p>
+    <p class="chip reveal" style="--i:3">Lounah Café · <span class="chip__say">[TODO: pronunciation from the current site]</span></p>
+  </div>
+</section>
+
+<!-- 6. MENU -->
+<section class="section menu" id="menu">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow reveal">On the summer menu</p>
+      <h2 class="reveal" style="--i:1">Worth taking your <em>time</em> over</h2>
+    </div>
+    <div class="section__actions reveal" style="--i:2">
+      <a class="btn btn--ghost" href="https://www.lounah.co.za/s/NEW-Lounah-Menu-September-2026-4.pdf" target="_blank" rel="noopener">Paarl menu</a>
+      <a class="btn btn--ghost" href="https://www.lounah.co.za/s/Lounah-Allee-Bleue-Opening-Menu-2-pafl.pdf" target="_blank" rel="noopener">Allée Bleue menu</a>
+    </div>
+  </div>
+
+  <div class="rail reveal" id="rail" tabindex="0" aria-label="Menu highlights, scroll sideways">
+    <article class="dish" style="--i:0">
+      <div class="dish__img"><img src="assets/ig/DfgbFOvD2BM.jpg" width="1365" height="1706" loading="lazy" alt="French toast with strawberries, served in the garden"></div>
+      <h3>French toast</h3><p>Sweet meets savoury. Every reason to take your time over breakfast.</p>
+    </article>
+    <article class="dish" style="--i:1">
+      <div class="dish__img"><img src="assets/ig/DfquQn4j6wR.jpg" width="1365" height="1706" loading="lazy" alt="The Fior di Latte open sandwich with tomato"></div>
+      <h3>Fior di Latte</h3><p>An open sandwich from the summer menu, best with a coffee.</p>
+    </article>
+    <article class="dish" style="--i:2">
+      <div class="dish__img"><img src="assets/ig/Dev0vYmlTVW.jpg" width="1365" height="1706" loading="lazy" alt="Spring Garden Omelette with greens and herbs"></div>
+      <h3>Spring Garden Omelette</h3><p>Feta, baby spinach, peas, tenderstem broccoli and fresh herbs.</p>
+    </article>
+    <article class="dish" style="--i:3">
+      <div class="dish__img"><img src="assets/ig/Dfycq7RD89i.jpg" width="1365" height="1706" loading="lazy" alt="Crispy chicken croissant with a poached egg and an iced coffee"></div>
+      <h3>Crispy chicken croissant</h3><p>Flaky, crunchy and worth pausing your morning for.</p>
+    </article>
+    <article class="dish" style="--i:4">
+      <div class="dish__img"><img src="assets/ig/De8X_VVCZxD.jpg" width="1365" height="1706" loading="lazy" alt="The Green Goddess bowl, fresh and colourful"></div>
+      <h3>Green Goddess</h3><p>Fresh, colourful, and giving your usual lunch order a little competition.</p>
+    </article>
+    <article class="dish" style="--i:5">
+      <div class="dish__img"><img src="assets/ig/DeyEwOpDS7r.jpg" width="1638" height="2048" loading="lazy" alt="Two cappuccinos being carried to a table"></div>
+      <h3>Coffee &amp; cake</h3><p>Carrot cake and Russian honey cake: the two our guests write home about.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 7. VISIT -->
+<section class="section visit" id="visit">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow reveal">Two places, one feeling</p>
+      <h2 class="reveal" style="--i:1">Come find <em>a seat</em></h2>
+    </div>
+    <p class="section__note reveal" style="--i:2">Walk-ins only — no bookings needed.</p>
+  </div>
+  <div class="branches" id="branches"></div>
+</section>
+
+<!-- 8. WHAT'S ON -->
+<section class="section whatson" id="whatson">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow reveal">What's on</p>
+      <h2 class="reveal" style="--i:1">Gather in the <em>garden</em></h2>
+    </div>
+  </div>
+
+  <div class="bento">
+    <article class="tile tile--lg reveal">
+      <img class="tile__bg" src="assets/ig/De8bdKgz-wn.jpg" width="935" height="1661" loading="lazy"
+           alt="A long table in the Paarl garden at dusk under strings of bistro lights">
+      <div class="tile__body">
+        <h3>Garden Dinners</h3>
+        <p>Long-table evenings in the Paarl garden, with wine pairings, a flowing fountain and bistro lights above. Seats go fast.</p>
+        <form class="signup" id="signup" novalidate>
+          <label class="sr" for="email">Email address</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required>
+          <button class="btn btn--cream" type="submit">Get first dibs</button>
+          <p class="signup__msg" id="signupMsg" role="status"></p>
+        </form>
+      </div>
+    </article>
+
+    <article class="tile reveal" style="--i:1">
+      <img class="tile__bg" src="assets/ig/DeZd-31sY6s.jpg" width="1220" height="2160" loading="lazy"
+           alt="A birthday celebration at a long table in the garden">
+      <div class="tile__body">
+        <h3>Celebrations</h3>
+        <p>Birthdays, baby showers and kitchen teas in the garden. Email Mia to plan yours.</p>
+        <blockquote class="tile__quote" id="celebQuote"></blockquote>
+        <a class="link" href="mailto:info@lounah.co.za?subject=Celebration%20enquiry">Plan a celebration <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+
+    <article class="tile reveal" style="--i:2">
+      <img class="tile__bg" src="assets/ig/DfaNjFPIFR-.jpg" width="1364" height="1706" loading="lazy"
+           alt="The Lounah Cup pop-up pod at Paarl Girls' High School">
+      <div class="tile__body">
+        <h3>Lounah Cup</h3>
+        <p>Our little sister: pop-up coffee pods for schools and businesses, starting at Paarl Girls' High.</p>
+        <a class="link" href="https://www.lounah.co.za/lounah-cup" target="_blank" rel="noopener">Meet Lounah Cup <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- 9. REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="rating reveal">
+    <p class="eyebrow">What our guests say</p>
+    <p class="g-lockup"><svg class="g-icon" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span>Reviews</span></p>
+    <p class="rating__score"><b id="bigScore">0.0</b></p>
+    <span class="rating__stars" id="bigStars" aria-hidden="true"></span>
+    <p class="rating__count" id="bigCount">Google reviews</p>
+    <div class="rating__bar"><i id="ratingFill"></i></div>
+    <p class="rating__split" id="ratingSplit"></p>
+    <a class="link" id="allReviews" href="#" target="_blank" rel="noopener">Read all reviews on Google <span aria-hidden="true">→</span></a>
+  </div>
+
+  <ul class="chips" id="themeChips" aria-label="What guests mention most"></ul>
+
+  <div class="rows">
+    <div class="row" id="row1"><div class="row__track"></div></div>
+    <div class="row row--rev" id="row2"><div class="row__track"></div></div>
+  </div>
+</section>
+
+<!-- 10. INSTAGRAM -->
+<section class="section insta" id="insta">
+  <div class="section__head">
+    <div>
+      <p class="eyebrow reveal">Follow along</p>
+      <h2 class="reveal" style="--i:1">@lounahcafe · <em>9.3K</em> friends of the house</h2>
+    </div>
+    <a class="btn btn--ghost reveal" style="--i:2" href="https://www.instagram.com/lounahcafe/" target="_blank" rel="noopener">Follow <span class="arr" aria-hidden="true">→</span></a>
+  </div>
+  <div class="masonry" id="masonry"></div>
+</section>
+</main>
+
+<!-- 11. FOOTER -->
+<footer class="footer">
+  <div class="footer__cols">
+    <div class="reveal">
+      <h3>Paarl</h3>
+      <p>501 Main Rd, Groenvlei<br>Paarl, 7646</p>
+      <p>Mon–Fri 08:00–16:00<br>Sat 08:00–15:00<br>Sun closed</p>
+      <p><a href="tel:+27609591436">+27 60 959 1436</a><br><a href="mailto:info@lounah.co.za">info@lounah.co.za</a></p>
+    </div>
+    <div class="reveal" style="--i:1">
+      <h3>Allée Bleue</h3>
+      <p>Allée Bleue Wine Estate<br>R45 &amp; R310, Groot Drakenstein<br>Franschhoek, 7680</p>
+      <p>Wed–Fri 08:00–16:00<br>Sat–Sun 08:00–15:00<br>Mon–Tue closed</p>
+      <p><a href="tel:+27640596715">+27 64 059 6715</a><br><a href="mailto:alleebleue@lounah.co.za">alleebleue@lounah.co.za</a></p>
+    </div>
+    <div class="reveal" style="--i:2">
+      <h3>Explore</h3>
+      <p><a href="#menu">Menu</a><br><a href="#whatson">Events</a><br><a href="https://www.lounah.co.za/lounah-cup" target="_blank" rel="noopener">Lounah Cup</a><br><a href="https://www.lounah.co.za/contact" target="_blank" rel="noopener">Contact</a></p>
+      <p class="socials">
+        <a href="https://www.instagram.com/lounahcafe/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/lounahcafe" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.tripadvisor.com" target="_blank" rel="noopener">Tripadvisor</a>
+        <a href="https://www.eatout.co.za" target="_blank" rel="noopener">EatOut</a>
+      </p>
+    </div>
+  </div>
+  <p class="footer__fine">Closed 24 Dec – 4 Jan · back 5 Jan 2027. Part of the Strive Capital family.</p>
+  <div class="footer__mark reveal" aria-hidden="true">Lounah Café</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
